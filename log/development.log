@@ -1080,3 +1080,179 @@ Processing by SongsController#index as */*
 Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.5ms | Allocations: 1359)
 
 
+Started GET "/songs" for ::1 at 2020-11-16 14:25:48 -0500
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#index as */*
+  [1m[36mSong Load (1.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 26ms (Views: 11.3ms | ActiveRecord: 12.7ms | Allocations: 5239)
+
+
+Started GET "/songs" for ::1 at 2020-11-16 14:26:06 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (1.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 1.1ms | Allocations: 1377)
+
+
+Started GET "/songs" for ::1 at 2020-11-16 14:26:07 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.7ms | Allocations: 1377)
+
+
+Started GET "/songs" for ::1 at 2020-11-16 14:26:11 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms | Allocations: 1377)
+
+
+Started GET "/songs" for ::1 at 2020-11-16 14:26:27 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.7ms | Allocations: 1377)
+
+
+Started GET "/songs" for ::1 at 2020-11-16 14:26:36 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms | Allocations: 1359)
+
+
+Started GET "/songs" for ::1 at 2020-11-16 14:26:38 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.3ms | Allocations: 1360)
+
+
+Started GET "/songs" for ::1 at 2020-11-16 14:29:01 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.6ms | Allocations: 1359)
+
+
+Started GET "/songs" for ::1 at 2020-11-16 14:30:30 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1359)
+
+
+Started GET "/songs" for ::1 at 2020-11-16 14:33:05 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (1.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 1.6ms | Allocations: 1359)
+
+
+Started PUT "/songs/4" for ::1 at 2020-11-16 14:42:05 -0500
+Processing by SongsController#update as */*
+  Parameters: {"history"=>{"length"=>19, "action"=>"PUSH", "location"=>{"pathname"=>"/songs/edit", "search"=>"", "hash"=>"", "key"=>"yocfim"}}, "location"=>{"pathname"=>"/songs/edit", "search"=>"", "hash"=>"", "key"=>"yocfim"}, "match"=>{"path"=>"/songs/edit", "url"=>"/songs/edit", "isExact"=>true, "params"=>{}}, "label"=>"edit", "song"=>{"selectedSong"=>{"id"=>4, "title"=>"Stitches", "artist"=>"Shawn Mendes", "time"=>"3:30", "created_at"=>"2020-11-16T17:40:10.148Z", "updated_at"=>"2020-11-16T17:40:10.148Z"}}, "title"=>"stitches", "id"=>"4"}
+  [1m[36mSong Load (2.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:43:in `set_song'
+  [1m[36mCACHE Song Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+[31mUnpermitted parameter: :selectedSong[0m
+Completed 200 OK in 65ms (Views: 1.4ms | ActiveRecord: 4.0ms | Allocations: 3114)
+
+
+Started GET "/songs" for ::1 at 2020-11-16 14:42:05 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (1.9ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 1.9ms | Allocations: 1362)
+
+
+Started GET "/songs" for ::1 at 2020-11-16 14:47:02 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (2.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 8.3ms | ActiveRecord: 2.0ms | Allocations: 1359)
+
+
+Started GET "/songs" for ::1 at 2020-11-16 14:47:09 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (3.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 11.9ms | ActiveRecord: 3.5ms | Allocations: 1359)
+
+
+Started GET "/songs" for ::1 at 2020-11-16 14:47:48 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (1.9ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 1.9ms | Allocations: 1359)
+
+
+Started GET "/songs" for ::1 at 2020-11-16 14:49:13 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (9.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 32ms (Views: 21.9ms | ActiveRecord: 9.3ms | Allocations: 1360)
+
+
+Started PUT "/songs/2" for ::1 at 2020-11-16 14:49:19 -0500
+Processing by SongsController#update as */*
+  Parameters: {"id"=>"2", "title"=>"Laugh Now Cry later", "artist"=>"Drake", "time"=>"4:22", "created_at"=>"2020-11-16T17:37:50.865Z", "updated_at"=>"2020-11-16T18:22:10.788Z", "song"=>{"id"=>"2", "title"=>"Laugh Now Cry later", "artist"=>"Drake", "time"=>"4:22", "created_at"=>"2020-11-16T17:37:50.865Z", "updated_at"=>"2020-11-16T18:22:10.788Z"}}
+  [1m[36mSong Load (1.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:43:in `set_song'
+  [1m[36mCACHE Song Load (0.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+[31mUnpermitted parameters: :id, :created_at, :updated_at[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:30:in `update'
+  [1m[36mSong Update (3.4ms)[0m  [1m[33mUPDATE "songs" SET "title" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["title", "Laugh Now Cry later"], ["updated_at", "2020-11-16 19:49:19.662888"], ["id", 2]]
+  ↳ app/controllers/songs_controller.rb:30:in `update'
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:30:in `update'
+Completed 200 OK in 33ms (Views: 1.3ms | ActiveRecord: 7.9ms | Allocations: 3651)
+
+
+Started GET "/songs" for ::1 at 2020-11-16 14:49:19 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (1.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 1.0ms | Allocations: 1359)
+
+
+Started GET "/songs" for ::1 at 2020-11-16 14:54:10 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.9ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.9ms | Allocations: 1359)
+
+
+Started GET "/songs" for ::1 at 2020-11-16 14:54:13 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (4.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 11.1ms | ActiveRecord: 4.2ms | Allocations: 1359)
+
+
+Started GET "/songs" for ::1 at 2020-11-16 14:54:59 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (2.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 11.2ms | ActiveRecord: 2.3ms | Allocations: 1359)
+
+
+Started GET "/songs" for ::1 at 2020-11-16 14:55:33 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.9ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.9ms | Allocations: 1359)
+
+
+Started GET "/songs" for ::1 at 2020-11-16 14:55:46 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (1.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 1.7ms | Allocations: 1359)
+
+
