@@ -83,4 +83,4 @@ test:
 production:
   <<: *default
   database: tunr_backend_production
-  url: <%= ENV['https://railstunr.herokuapp.com/'] %>
+  url: <%= ENV['postgres://jakey:Aces1994@localhost:5432/tunr_backend_production/'] %>
