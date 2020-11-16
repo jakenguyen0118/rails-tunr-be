@@ -82,7 +82,5 @@ test:
 #
 production:
   <<: *default
-  # database: tunr_backend_production
-  # username: tunr_backend
-  # password: <%= ENV['TUNR_BACKEND_DATABASE_PASSWORD'] %>
+  database: tunr_backend_production
   url: <%= ENV['https://railstunr.herokuapp.com/'] %>
